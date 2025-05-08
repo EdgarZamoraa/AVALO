@@ -1,0 +1,16 @@
+<Window
+    x:Class="AVALO.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Texto directo"
+    Width="400"
+    Height="200">
+
+    <StackPanel Margin="20" Spacing="10">
+        <TextBox x:Name="NombreInput" Watermark="Nombre" />
+        <TextBox x:Name="ApellidoInput" Watermark="Apellido" />
+        <TextBlock>TEST</TextBlock>
+        <TextBox>adios</TextBox>
+        <TextBlock x:Name="ResultadoTexto" />
+    </StackPanel>
+</Window>
