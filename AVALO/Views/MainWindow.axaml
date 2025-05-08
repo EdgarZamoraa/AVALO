@@ -4,13 +4,47 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="Texto directo"
     Width="400"
-    Height="200">
+    Height="800">
 
     <StackPanel Margin="20" Spacing="10">
         <TextBox x:Name="NombreInput" Watermark="Nombre" />
         <TextBox x:Name="ApellidoInput" Watermark="Apellido" />
         <TextBlock>TEST</TextBlock>
         <TextBox>adios</TextBox>
-        <TextBlock x:Name="ResultadoTexto" />
+        <Button>PRESS</Button>
+        <TextBlock x:Name="ResultadoTexto" Text="sd" />
+        <Grid
+            Margin="4"
+            ColumnDefinitions="100,1.5*,4*,3,3,3,3,3,100"
+            RowDefinitions="Auto,Auto,Auto,100,100,100,100,100,100,100">
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Col0Row0:" />
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Col0Row1:" />
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Col0Row2:" />
+            <CheckBox
+                Grid.Row="0"
+                Grid.Column="2"
+                Content="Col2Row0" />
+            <Button
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Content="SpansCol1-2Row1-2" />
+            <Button
+                Grid.Row="5"
+                Grid.RowSpan="2"
+                Grid.Column="9"
+                Grid.ColumnSpan="2"
+                Content="SpansCol1-2Row1-2" />
+        </Grid>
     </StackPanel>
 </Window>
